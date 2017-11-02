@@ -66,6 +66,9 @@ export interface ChangeEvent {
 export class VirtualScrollComponent implements OnInit, OnChanges, OnDestroy {
 
     @Input()
+    disabled: boolean;
+
+    @Input()
     items: any[] = [];
 
     @Input()
@@ -104,7 +107,7 @@ export class VirtualScrollComponent implements OnInit, OnChanges, OnDestroy {
     }
 
     get enabled() {
-        return this.items && this.items.length > 20;
+        return !this.disabled && this.items && this.items.length > 20;
     }
 
     handleScroll() {

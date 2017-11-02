@@ -60,6 +60,7 @@ export class NgSelectComponent implements OnInit, OnDestroy, OnChanges, AfterVie
     @Input() bindLabel = 'label';
     @Input() bindValue: string;
     @Input() clearable = true;
+    @Input() disableVirtualScroll = false;
     @Input() placeholder: string;
     @Input() notFoundText = 'No items found';
     @Input() typeToSearchText = 'Type to search';
@@ -270,7 +271,7 @@ export class NgSelectComponent implements OnInit, OnDestroy, OnChanges, AfterVie
 
     selectTag() {
         let tag = {}
-        
+
         if (this.addTag instanceof Function) {
             tag = this.addTag(this.filterValue);
         } else {
