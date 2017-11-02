@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 
 import {AppComponent} from './app.component';
-import {NgSelectModule} from '@ng-select/ng-select';
+import {NgSelectModule} from '@the-mx-group/ng-select';
 
 @NgModule({
   declarations: [

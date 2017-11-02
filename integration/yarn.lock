@@ -142,7 +142,7 @@
   dependencies:
     tsickle "^0.21.0"
 
-"@ng-select/ng-select@../dist/":
+"@the-mx-group/ng-select@../dist/":
   version "0.0.0"
 
 "@ngtools/json-schema@1.1.0":
